@@ -15,4 +15,8 @@ export class AppComponent {
   title = 'angular-web';
 
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log('User selected:' + id);
+  }
 }
