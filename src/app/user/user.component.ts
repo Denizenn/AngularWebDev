@@ -15,6 +15,7 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 })
 export class UserComponent {
   @Input( {required: true} ) user!: User;
+  @Input({required: true}) selected!: boolean;
 
   @Output() select = new EventEmitter<string>();
 
